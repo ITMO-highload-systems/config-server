@@ -12,6 +12,6 @@ spring:
           search-paths: "{application}"
 
 server:
-  port: 8888
+  port: ${NOTION_CONFIG_SERVER_PORT:8888}
 
 
