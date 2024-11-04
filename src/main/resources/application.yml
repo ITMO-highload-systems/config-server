@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: notion-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.se.ifmo.ru/notion/config.git
+          username: ${GITLAB_USERNAME}
+          password: ${GITLAB_PASSWORD}
+          default-label: master
+          search-paths: "{application}"
+
+server:
+  port: 8888
+
+
