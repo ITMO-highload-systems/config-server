@@ -5,9 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.se.ifmo.ru/notion/config.git
-          username: ${GITLAB_USERNAME}
-          password: ${GITLAB_PASSWORD}
+          uri: https://github.com/ITMO-highload-systems/config.git
+          username: ${GITHUB_USERNAME}
+          password: ${GITHUB_TOKEN}
           default-label: master
           search-paths: "{application}"
 
