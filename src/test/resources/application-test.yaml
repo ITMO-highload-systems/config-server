@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: notion-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ITMO-highload-systems/config.git
+          username: test_user
+          password: test_token
+          default-label: master
+          search-paths: "{application}"
+
+server:
+  port: 8888
+
+
